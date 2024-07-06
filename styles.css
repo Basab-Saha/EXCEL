@@ -20,6 +20,7 @@ body{
 }
 
 
+
 .cell-actions-cont{
     height:3rem;
     background-color: #ecf0f1;
@@ -27,6 +28,10 @@ body{
     align-items: center;
     padding: 1rem;
 }
+.cell-actions-cont > *  :hover{
+    cursor: pointer;
+}
+
 .cell-actions-cont > *{
     display: inline-block;
     margin: 1rem;
@@ -168,7 +173,14 @@ body{
 .row-cont{
     display: flex;
 }
-
-.address-bar{
-
+.color-props{
+    position: relative;
+}
+.color-props > input{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }

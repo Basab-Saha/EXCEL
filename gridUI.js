@@ -28,8 +28,15 @@ for(let i=0;i<rows;i++){
     rowCont.setAttribute("class","row-cont");
     for(let j=0;j<cols;j++){
         let cell=document.createElement("div");
+
         cell.setAttribute("class","cell");
         cell.setAttribute("contenteditable","true");
+        cell.setAttribute("spellcheck","false")
+
+        //attributes cell's storgae and identification :
+        cell.setAttribute("rid",i);
+        cell.setAttribute("cid",j);
+
         rowCont.appendChild(cell);
         addListenerForAddressBarDisplay(cell,i,j);
 
@@ -45,3 +52,8 @@ function addListenerForAddressBarDisplay(cell,i,j){
 
     })
 }
+
+//excel khullei jano first ei by default 1st cell select kora thake
+let firstCell=document.querySelector(".cell"); 
+//je je element er class="cell" ache tader modhye sobar 1st element select kora
+firstCell.click(); //click event fire korlam
