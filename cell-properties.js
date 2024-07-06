@@ -16,6 +16,8 @@
             fontSize:"14",
             fontColor:"#000000",
             BGColor:"#000000", //just for indication (def value)
+            value:"" ,//cell er actual value
+            formula:"" //cell er formula value
        }
        sheetRow.push(cellProps); 
     }
