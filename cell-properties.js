@@ -1,29 +1,14 @@
  //gridUI.js's variables copies here
 
+let collectedSheetDB=[]; //contains all sheetDBs
+let sheetDB=[]; //current sheetDB
 
-
- //Storage Matrix for stroing cell state
- let sheetDB=[];
- for(let i=0 ; i<rows;i++){
-    let sheetRow=[];
-    for(let j=0;j<cols;j++){
-       let cellProps={
-            bold:false,
-            italic:false,
-            underline:false,
-            alignment:"left",
-            fontFamily:"monospace",
-            fontSize:"14",
-            fontColor:"#000000",
-            BGColor:"#000000", //just for indication (def value)
-            value:"" ,//cell er actual value
-            formula:"" ,//cell er formula value
-            children:[] //child cells of the current cell
-       }
-       sheetRow.push(cellProps); 
-    }
-    sheetDB.push(sheetRow);
- }
+{
+    let addSheetBtn=document.querySelector(".sheet-add-icon");
+    addSheetBtn.click();
+    handleSheetProperties();
+}
+ 
 
  //ebar i have to develop a mechanism such that :
  //grid e cell E7 select korle jano storgae matrix eo cell E7 select hoi 

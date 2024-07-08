@@ -13,6 +13,7 @@ for (let i = 0; i < rows; i++) {
             if (enteredData === cellProp.value) return;
 
             cellProp.value = enteredData;
+            console.log(sheetDB)
             // If data modifies remove P-C relation, formula empty, update children with new hardcoded (modified) value
             removeChildFromParent(cellProp.formula);
             cellProp.formula = "";

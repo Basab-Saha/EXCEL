@@ -1,13 +1,5 @@
-//storage of graph->2d matrix chai
+let collectedGraphComponent=[];
 let graphComponentMatrix=[];
-for(let i=0;i<rows;i++){
-    let row=[]
-    for(let j=0;j<cols;j++){
-        row.push([]); //more than 1 child can be there
-    }
-    graphComponentMatrix.push(row);
-}
-
 //checkin for cycle
 function isGraphCyclic(graphComponentMatrix){
     //dependency->visited , dfsVis (2d array)

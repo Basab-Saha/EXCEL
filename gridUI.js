@@ -54,7 +54,3 @@ function addListenerForAddressBarDisplay(cell,i,j){
     })
 }
 
-//excel khullei jano first ei by default 1st cell select kora thake
-let firstCell=document.querySelector(".cell"); 
-//je je element er class="cell" ache tader modhye sobar 1st element select kora
-firstCell.click(); //click event fire korlam

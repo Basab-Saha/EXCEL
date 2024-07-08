@@ -114,6 +114,7 @@ body{
 }
 .sheet-folder{
     text-decoration: underline;
+    padding: 0.5rem;
 }
 .grid-cont {
     height: calc(100vh - 3rem - 2rem - 3rem - 3rem);
