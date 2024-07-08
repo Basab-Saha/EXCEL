@@ -88,6 +88,8 @@ body{
     background-color: #ecf0f1;
     gap:1rem;
     font-size: 0.9rem;
+
+    overflow: auto;
 }
 .sheet-actions-cont > *{
     display: inline-block;
@@ -97,6 +99,9 @@ body{
     margin-right: .3rem;
     width: 1vw;
 }
+.sheet-add-icon:hover{
+    cursor: pointer;
+}
 .sheets-folder-cont{
     height: 80%;
     width: 5rem;
@@ -104,6 +109,7 @@ body{
     width: calc(100vw - 2vw);
 
     display: flex;
+    gap: 1rem;
     align-items: center;
 }
 .sheet-folder{
