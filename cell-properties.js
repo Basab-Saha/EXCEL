@@ -17,7 +17,8 @@
             fontColor:"#000000",
             BGColor:"#000000", //just for indication (def value)
             value:"" ,//cell er actual value
-            formula:"" //cell er formula value
+            formula:"" ,//cell er formula value
+            children:[] //child cells of the current cell
        }
        sheetRow.push(cellProps); 
     }
@@ -233,6 +234,10 @@ function addListenerToAttachCellProperties(cell) {
                 rightAlign.style.backgroundColor = activeColorProp;
                 break;
         }
+        let formulaBar=document.querySelector(".formula-bar");
+        formulaBar.value=cellProp.formula;
+        cell.innerText=cellProp.value;
+       
 
         
     })
